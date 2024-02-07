@@ -5,8 +5,10 @@ const SliderPhotos = () => {
         <Swiper
             loop={true}
             slidesPerView={"auto"}
-            spaceBetween={0}
+            spaceBetween={5}
+            slideToClickedSlide={true}
             grabCursor={true}
+            mousewheel={true}
             centeredSlides={true}
             pagination={{
                 el: ".swiper-pagination",
