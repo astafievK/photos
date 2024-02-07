@@ -76,7 +76,7 @@ h1{
 .create-photo-link {
   text-align: center;
   align-self: center;
-  padding: 30px 70px;
+  padding: 25px 65px;
   border-radius: 5px;
   margin-top: 50px;
   font-size: 35px;
@@ -92,8 +92,5 @@ h1{
   &:active,
   &:focus {
     background-position: right;
-    -webkit-box-shadow: 0px 0px 29px 9px rgba(51, 139, 147, 0.38);
-    -moz-box-shadow: 0px 0px 29px 9px rgba(51, 139, 147, 0.38);
-    box-shadow: 0px 0px 29px 9px rgba(51, 139, 147, 0.38);
   }
 }
