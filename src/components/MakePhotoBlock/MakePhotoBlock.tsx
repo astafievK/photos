@@ -1,15 +1,18 @@
 import React from 'react';
 
 const MakePhotoBlock: React.FC = () => {
-    const video = document.getElementById('video')
+    const videoRef = React.useRef<HTMLVideoElement>(null);
 
-    function startVideo(){
-        navigator.getUserMedia(
-            { video: {} },
-            stream => video.srcObject = stream,
-            err => console.error(err)
-        )
-    }
+    const startVideo = async () => {
+        try {
+            const stream = await navigator.mediaDevices.getUserMedia({ video: {} });
+            if (videoRef.current) {
+                videoRef.current.srcObject = stream;
+            }
+        } catch (err) {
+            console.error(err);
+        }
+    };
 
     return (
         <>

@@ -1,5 +1,4 @@
 import React from "react";
-import MakePhotoBlock from "../MakePhotoBlock/MakePhotoBlock.tsx";
 
 interface AdviceBlockProps {
     counter: number
