@@ -10,15 +10,11 @@ const SliderPhotos = () => {
             grabCursor={true}
             mousewheel={true}
             centeredSlides={true}
-            pagination={{
-                el: ".swiper-pagination",
-                clickable: true,
-            }}
             effect={"coverflow"}
             coverflowEffect={{
                 rotate: 0,
-                stretch: 80,
-                depth: 200,
+                stretch: 0,
+                depth: 0,
                 modifier: 1,
                 slideShadows: false
             }}

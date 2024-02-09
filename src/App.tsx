@@ -4,6 +4,7 @@ import PageIndex from "./components/PageIndex/PageIndex.tsx";
 import { Provider } from 'react-redux';
 import {PersistGate} from "redux-persist/integration/react";
 import {persistor, store} from "./store/store.ts";
+import PageCreatePhoto from "./components/PageCreatePhoto/PageCreatePhoto.tsx";
 
 const Root = () => {
     return (
@@ -19,6 +20,11 @@ const router = createBrowserRouter(
             <Route path="" element={
                 <>
                     <PageIndex/>
+                </>
+            } />
+            <Route path="/create" element={
+                <>
+                    <PageCreatePhoto/>
                 </>
             } />
         </Route>
